@@ -7,6 +7,7 @@ Dieses öffentliche Repository **[Koco-008/SPOT](https://github.com/Koco-008/SPO
 | [`SPOT`](https://github.com/Koco-008/SPOT) | Diese Anleitung, Stückliste, Verdrahtung, Installationsprüfung | Ja |
 | `SPOT-App` (privat) | App-Entwicklung, CI und signierte Veröffentlichungs-Workflows | Nein |
 | [`SPOT-Releases`](https://github.com/Koco-008/SPOT-Releases/releases/tag/v0.31.1) | Offiziell signierte SPOT App 0.31.1, inklusive editierbarer Quelltexte | Ja |
+| [`SPOT-OS`](https://github.com/Koco-008/SPOT-OS) | Öffentlicher, prüfsummenabgeglichener OS-0.1.7-Quellcode und Tests | Zum Nachlesen / Entwickeln |
 | [`SPOT-OS-Releases`](https://github.com/Koco-008/SPOT-OS-Releases/releases/tag/os-v0.1.7) | Offiziell signiertes SPOT OS 0.1.7 | Ja |
 | [`Lepton-Pi5`](https://github.com/Koco-008/Lepton-Pi5) | Öffentliche Treiberquelle, vom OS-Installer fest an eine geprüfte Revision gebunden | Automatisch durch das signierte Setup |
 
