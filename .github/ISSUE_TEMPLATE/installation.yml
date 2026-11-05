@@ -1,0 +1,38 @@
+name: Aufbau oder Installation funktioniert nicht
+description: Fehlerbericht zum SPOT-BMA-Nachbau
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Bitte keine WLAN-Kennwörter, SSH-Schlüssel, privaten Tokens, persönlichen Daten oder vollständigen Logs veröffentlichen. Vor dem Kontakt mit spannungsführender Hardware das Netzteil trennen.
+  - type: dropdown
+    id: phase
+    attributes:
+      label: In welchem Schritt tritt der Fehler auf?
+      options:
+        - Einkauf / Bauteilkompatibilität
+        - Mechanischer Aufbau / Verdrahtung
+        - Raspberry Pi OS / Kernel
+        - Herunterladen / Signaturen
+        - App-Installation
+        - Lepton-Provisionierung
+        - SPOT OS-Installation
+        - Start / Livekamera
+        - Aufnahme / Messung
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Hardware und Software
+      description: Pi-Modell, Lepton-Modell, Displaymodell/Revision, App- und OS-Version, uname -r (keine Gerätenummern)
+    validations:
+      required: true
+  - type: textarea
+    id: error
+    attributes:
+      label: Fehler und letzter erfolgreich durchgeführter Schritt
+      description: Fehlermeldung ohne Geheimnisse, beobachtetes Verhalten, was bereits geprüft wurde
+    validations:
+      required: true

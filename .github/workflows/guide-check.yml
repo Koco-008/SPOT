@@ -1,0 +1,25 @@
+name: Guide checks
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Install test dependency
+        run: python -m pip install cryptography pytest
+      - name: Run verification regression tests
+        run: python -m pytest tests -q
+      - name: Syntax check
+        run: python -m py_compile scripts/spot_releases.py
+      - name: Ensure files are not accidentally sensitive
+        run: |
+          if find . -type f -not -path './.git/*' | grep -E '(id_rsa|\.env$|\.pem$|\.key$|/private|token\.txt$)'; then
+            echo 'Potentially sensitive source file detected'; exit 1
+          fi

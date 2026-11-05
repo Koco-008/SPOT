@@ -1,0 +1,14 @@
+# Local downloads and extracted packages, never committed
+downloads/
+spot-downloads/
+spot-app-*-verified/
+spot-os-*-verified/
+*.download
+__pycache__/
+.pytest_cache/
+*.pyc
+*.zip
+*.tar.gz
+.env
+*.pem
+*.key
