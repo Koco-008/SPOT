@@ -42,6 +42,7 @@ Raspberry Pi 5, offiziellen Active Cooler, 27-W-USB-C-Netzteil, microSD, **FLIR 
 
 - [App 0.31.1 – offizieller Stable-Release](https://github.com/Koco-008/SPOT-Releases/releases/tag/v0.31.1)
 - [OS 0.1.7 – offizieller Stable-Release](https://github.com/Koco-008/SPOT-OS-Releases/releases/tag/os-v0.1.7)
+- [SPOT-OS – vollständiger öffentlicher Quellcode](https://github.com/Koco-008/SPOT-OS) (kein signiertes Installationspaket)
 - [Öffentliches Lepton-Pi5-Treiberprojekt](https://github.com/Koco-008/Lepton-Pi5)
 
 Die Dateien liegen in den **expliziten ZIP-Assets**, nicht in den automatisch von GitHub erstellten `Source code (zip)`-Downloads. Die Releases sind getrennt mit Ed25519 signiert. [So prüfst du sie](docs/05-download-verifizieren.md).
