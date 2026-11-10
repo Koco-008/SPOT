@@ -4,9 +4,6 @@
 
 SPOT ist eine für die Fehlersuche an elektronischen Platinen entwickelte Wärmebildkamera auf Basis eines Raspberry Pi 5 und eines radiometrischen FLIR Lepton 3.5. Sie zeigt Temperaturen an, ermöglicht Punktmessungen sowie Min-/Max-Erkennung, speichert Wärmebilder mit unveränderten radiometrischen Rohdaten und besitzt eine Touchoberfläche.
 
-> **BMA-Freeze (05.11.2026): SPOT App 0.31.1 Stable + SPOT OS 0.1.7 Stable.**
-> Spätere Entwicklungen sind ausdrücklich **nicht** Bestandteil dieses dokumentierten BMA-Stands.
-
 ## Der Weg zu deinem eigenen SPOT
 
 | Schritt | Anleitung | Status |
