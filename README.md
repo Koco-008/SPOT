@@ -6,7 +6,7 @@ SPOT ist eine Wärmebildkamera für die Analyse elektronischer Baugruppen. Das P
 
 | Bereich | Dokumentation |
 | --- | --- |
-| Komponenten | [Stückliste](BOM.csv) |
+| Komponenten | [Bill of Materials](BOM.md) |
 | Zusammenbau und Verdrahtung | [hardware/assembly.md](hardware/assembly.md) |
 | Gehäuse / CAD | [hardware/cad/](hardware/cad/) |
 | Leiterplatte / Fertigungsdaten | [hardware/pcb/](hardware/pcb/) |
