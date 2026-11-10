@@ -2,6 +2,8 @@
 
 Manufacturing files for the SPOT connector PCB.
 
+[Bill of Materials (BOM)](BOM.md)
+
 | Revision | Gerber archive |
 | --- | --- |
 | v1.2 | [SPOT_Connector-PCB_v1.2.zip](SPOT_Connector-PCB_v1.2.zip) |
