@@ -123,5 +123,3 @@ sudo spot-os doctor
 The final `doctor` result should report `ok: true`. Confirm that the live image, touch interface and temperature readings work on the device.
 
 ---
-
-**Compatibility note:** These commands describe the currently published stable release, not a generic installer for all Raspberry Pi OS versions. The original SPOT prototype runs this software; a completely independent first installation from a blank SD card has not yet been verified.
