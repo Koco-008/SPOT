@@ -1,33 +1,33 @@
 # SPOT
 
-SPOT ist eine Wärmebildkamera für die Analyse elektronischer Baugruppen. Das Projekt kombiniert einen Raspberry Pi 5, einen FLIR Lepton 3.5, eine Raspberry Pi Camera 3 und ein 5-Zoll-Touchdisplay.
+SPOT is a thermal imaging camera designed for inspecting electronic assemblies. It combines a Raspberry Pi 5, a FLIR Lepton 3.5, a Raspberry Pi Camera Module 3, and a 5-inch touchscreen.
 
-## Nachbauen
+## Build Your Own SPOT
 
-| Bereich | Dokumentation |
+| Section | Documentation |
 | --- | --- |
-| Komponenten | [Bill of Materials](BOM.md) |
-| Zusammenbau und Verdrahtung | [hardware/assembly.md](hardware/assembly.md) |
-| Gehäuse / CAD | [hardware/cad/](hardware/cad/) |
-| Leiterplatte / Fertigungsdaten | [hardware/pcb/](hardware/pcb/) |
-| Fotos und Zeichnungen | [hardware/images/](hardware/images/) |
-| Software installieren | [software/installation.md](software/installation.md) |
-| Bedienung | [software/usage.md](software/usage.md) |
-| Fehlerbehebung | [software/troubleshooting.md](software/troubleshooting.md) |
+| Components | [Bill of Materials](BOM.md) |
+| Assembly and wiring | [Assembly instructions](hardware/assembly.md) |
+| Enclosure and CAD models | [CAD files](hardware/cad/) |
+| Connector PCB and manufacturing files | [PCB files](hardware/pcb/) |
+| Photos and illustrations | [Hardware images](hardware/images/) |
+| Software installation | [Installation guide](software/installation.md) |
+| Operation | [User guide](software/usage.md) |
+| Troubleshooting | [Troubleshooting](software/troubleshooting.md) |
 
-## Software und Quellen
+## Software and Source Code
 
 - [SPOT App – Releases](https://github.com/Koco-008/SPOT-Releases/releases)
 - [SPOT OS – Releases](https://github.com/Koco-008/SPOT-OS-Releases/releases)
-- [SPOT OS – Quellcode](https://github.com/Koco-008/SPOT-OS)
-- [Lepton-Pi5 – Treiber](https://github.com/Koco-008/Lepton-Pi5)
+- [SPOT OS – Source Code](https://github.com/Koco-008/SPOT-OS)
+- [Lepton-Pi5 – Driver](https://github.com/Koco-008/Lepton-Pi5)
 
-Unter `scripts/` liegen die bestehenden Werkzeuge für Plattformprüfung und Release-Verifikation. Die öffentlichen Signaturschlüssel liegen unter `keys/`.
+The `scripts/` directory contains the existing platform checks and release verification tools. Public signing keys are available in `keys/`.
 
-## Dokumentationsstand
+## Documentation Status
 
-Die neue Struktur ist vorbereitet. Dateien mit dem Hinweis *Dokumentation folgt* sind noch nicht ausgearbeitet. Eine vollständige Erstinstallation auf einem neuen Raspberry Pi ist damit derzeit **nicht** als durchgehend dokumentiert oder unabhängig geprüft anzusehen.
+The hardware files and assembly instructions are available. The user guide and troubleshooting documentation are still being prepared. A complete first-time installation on a fresh SD card has not yet been independently verified.
 
-## Lizenz
+## License
 
-[MIT](LICENSE). Für externe Hardware und Software gelten deren jeweilige Lizenzen.
+[MIT](LICENSE). Third-party hardware and software remain subject to their respective licenses.
