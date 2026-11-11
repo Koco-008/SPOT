@@ -26,7 +26,7 @@ The `scripts/` directory contains the existing platform checks and release verif
 
 ## Documentation Status
 
-The hardware files and assembly instructions are available. The user guide and troubleshooting documentation are still being prepared. A complete first-time installation on a fresh SD card has not yet been independently verified.
+Hardware files, assembly instructions, the illustrated user manual and installation steps are available. For a new build, start with the [Raspberry Pi OS image specified in the installation guide](software/installation.md) and check the required kernel version.
 
 ## License
 

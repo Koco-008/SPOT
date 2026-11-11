@@ -1,30 +1,48 @@
 # SPOT Installation
 
-Flash **Raspberry Pi OS (64-bit, Debian 13 / Trixie)** onto a microSD card using [Raspberry Pi Imager](https://www.raspberrypi.com/software/). Create a user named `admin`, configure networking and enable SSH.
-
-**Required kernel for this release:** `6.18.50+rpt-rpi-2712`. Check it after booting; newer Raspberry Pi OS images may ship with a different kernel. The SPOT OS 0.1.7 driver installer has not been qualified for other kernels.
-
 These steps install **SPOT App 0.31.1** and **SPOT OS 0.1.7** on a new Raspberry Pi 5.
+
+## 0. Flash Raspberry Pi OS
+
+Use the official **Raspberry Pi OS Desktop (64-bit, Debian 13 / Trixie), released 6 October 2026**:
+
+**[Download the Raspberry Pi OS image](https://downloads.raspberrypi.com/raspios_arm64/images/raspios_arm64-2026-10-06/2026-10-06-raspios-trixie-arm64.img.xz)**
+
+SHA-256 of the downloaded `.img.xz` file:
+
+```text
+976766570bee2aaf3047dd78649cfe82abb8fe9687b7f15030cd533ba4e9f7a9
+```
+
+In [Raspberry Pi Imager](https://www.raspberrypi.com/software/), choose **Use custom** and select the downloaded `.img.xz`. Write it to a microSD card. Set the username to `admin`, configure networking and enable SSH.
+
+This dated image is a better starting point than an automatically updated image. SPOT OS 0.1.7 requires **kernel `6.18.50+rpt-rpi-2712`** for initial Lepton driver installation. The Raspberry Pi archive contains the exact [kernel](https://archive.raspberrypi.com/debian/pool/main/l/linux/linux-image-6.18.50%2Brpt-rpi-2712_6.18.50-1%2Brpt1_arm64.deb) and [matching headers](https://archive.raspberrypi.com/debian/pool/main/l/linux/linux-headers-6.18.50%2Brpt-rpi-2712_6.18.50-1%2Brpt1_arm64.deb); the installer's kernel check below is authoritative. Do not proceed if `uname -r` differs.
 
 ## 1. Connect and check the Pi
 
-Connect via SSH (`ssh admin@<pi-address>`) and run:
+Connect via SSH (`ssh admin@<pi-address>`) and check the running kernel:
 
 ```bash
 uname -r
+```
+
+It must print `6.18.50+rpt-rpi-2712`. Then install Git, clone the project and run the platform check:
+
+```bash
+sudo apt update
+sudo apt install --no-install-recommends git python3-cryptography
 git clone https://github.com/Koco-008/SPOT.git ~/SPOT
 cd ~/SPOT
 bash scripts/check_pi.sh
 ```
 
-The check must pass before continuing. The Raspberry Pi Camera 3, Lepton 3.5 and Waveshare DSI display should already be connected.
+The check must pass before continuing. The Raspberry Pi Camera 3, Lepton 3.5 and Waveshare DSI display should already be connected. Avoid `apt full-upgrade` until the SPOT driver supports the newer kernel.
 
 ## 2. Install dependencies
 
 ```bash
-sudo apt update
 sudo apt install --no-install-recommends \
-  git unzip python3 python3-pip python3-venv python3-cryptography \
+  unzip python3 python3-pip python3-venv \
   python3-picamera2 python3-numpy python3-smbus2 python3-opencv \
   python3-pyside6.qtcore python3-pyside6.qtgui \
   python3-pyside6.qtwidgets python3-pyside6.qtsvg \
