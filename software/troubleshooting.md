@@ -1,3 +1,0 @@
-# Fehlerbehebung
-
-*Dokumentation folgt.*
