@@ -1,5 +1,9 @@
 # SPOT – Assembly Instructions
 
+## Prerequisites
+
+Have all components listed in the [Bill of Materials](../BOM.md) ready. Install the FLIR Lepton 3.5 sensor into the Lepton Breakout Board v2 before starting. Refer to the official FLIR documentation if needed.
+
 ## Step 1: Prepare the display
 
 Unpack all components and lay them out on a table. Remove the spacers from the back of the display, as shown.
@@ -14,7 +18,7 @@ Mount the Raspberry Pi 5 on the back of the display using the included screws.
 
 ## Step 3: Assemble the connector PCB
 
-Assemble the connector PCB using the plastic screws and spacers, then connect the ribbon cables to the Pi Camera Module 3 and the display.
+Assemble the connector PCB using the plastic screws and brass spacers, then connect the ribbon cables to the Pi Camera Module 3 and the display.
 
 <img src="images/assembly/assembly-step-03.jpg" alt="Connector PCB and camera components before and after assembly" width="720">
 
@@ -41,3 +45,7 @@ Attach the long standoffs at the corners of the display.
 Insert the assembly into the 3D-printed case and secure it with four M2.5 × 14 mm screws. Depending on the print tolerances, a snug fit may require some gentle pressure.
 
 <img src="images/assembly/assembly-step-07.jpg" alt="Assembly and 3D-printed case before and after fitting" width="780">
+
+## Step 8: Install the camera cover magnets
+
+The camera cover has recesses for 6 × 3 mm magnets. Secure the magnets with an adhesive suitable for plastic. Check their polarity before gluing them in place.
